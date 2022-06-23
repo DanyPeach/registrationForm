@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Title</title>
+    <link rel="stylesheet" href="assert/css/registrationstyle.css">
 </head>
 <body>
-<h1>Hello</h1>
-<form action="slay" method="POST">
-    Name: <input name="username" />
+<h1 style="text-align: center; padding-bottom: 50px">Welcome to the TMS</h1>
+<div class="form_div">
+<form action="registration" method="POST">
+     <input class="signup-text-input" name="username" placeholder="Your Name" required/>
     <br><br>
-    Age: <input name="userage" />
+     <input class="signup-text-input" name="userage" placeholder="Your Age" required/>
     <br><br>
-    Gender: <input type="radio" name="gender" value="female" checked />Female
-    <input type="radio" name="gender" value="male" />Male
+  <input class="signup-text-input" name="login" placeholder="Your Login" required/>
     <br><br>
-    Login: <input name="login" />
+     <input class="signup-text-input" name="password" placeholder="Your Password" required/>
     <br><br>
-    Password: <input name="password" />
+    <input class="signup-text-input" type="radio" name="gender" value="female" checked />Female
+    <input class="signup-text-input" type="radio" name="gender" value="male" />Male
     <br><br>
+    <a href="/draft/login.html" style="text-align: left; color: #FFA07A; text-decoration-color: coral" >Log In</a>
     <br><br>
-
-    <input type="submit" value="Submit" />
+    <input class="signup-button" type="submit" value="Submit" />
 </form>
+</div>
 </body>
+
 </html>
